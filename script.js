@@ -13,6 +13,11 @@ function showNotification() {
         notification.classList.add('hidden');
     }, 3000);
 }
+// Fungsi untuk mengatur tampilan menu sosial
+function toggleMenu() {
+    const menu = document.getElementById('social-menu');
+    menu.classList.toggle('show'); // Tambah atau hapus kelas 'show'
+}
 
 // Dark Mode Toggle
 const darkModeToggle = document.getElementById('darkModeToggle');
