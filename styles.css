@@ -182,3 +182,96 @@ td {
 .order-btn:active {
     transform: scale(0.95); /* Animasi klik tombol membuatnya sedikit mengecil */
 }
+.testimonials {
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 1.8em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    color: #E0E0E0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #FFD700;
+}
+/* Gaya untuk Hamburger Menu */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute; /* Posisi tetap di pojok kanan atas */
+    top: 20px;
+    right: 20px;
+}
+
+/* Gaya untuk Menu Media Sosial */
+.social-menu {
+    display: none; /* Mulai dalam keadaan tersembunyi */
+    position: absolute;
+    top: 70px; /* Menempatkan di bawah tombol hamburger */
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Pastikan di atas konten lainnya */
+    opacity: 0; /* Mulai dengan transparansi 0 */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Animasi untuk opacity dan transform */
+    transform: translateY(-10px); /* Menggeser ke atas saat muncul */
+}
+
+/* Tampilkan menu */
+.social-menu.show {
+    display: block; /* Tampilkan menu */
+    opacity: 1; /* Ubah transparansi ke 1 */
+    transform: translateY(0); /* Kembali ke posisi semula */
+}
+
+.social-menu ul {
+    list-style-type: none; /* Menghapus bullet points */
+    padding: 10px;
+    margin: 0;
+}
+
+.social-menu li {
+    margin: 10px 0;
+}
+
+.social-menu a {
+    color: white; /* Warna teks putih untuk tautan */
+    text-decoration: none; /* Menghapus garis bawah */
+    font-size: 18px; /* Ukuran font */
+    transition: color 0.3s; /* Transisi halus untuk efek hover */
+}
+
+.social-menu a:hover {
+    color: #1E90FF; /* Mengubah warna saat hover */
+    }
+    
