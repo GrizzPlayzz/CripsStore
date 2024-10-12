@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Crips-Store</title>
+</head>
+<body>
+    <header>
+        <div class="store-title">
+            <h1>Crips-Store</h1>
+        </div>
+        <p>Dapatkan layanan hosting game dan desain logo terbaik di sini!</p>
+    </header>
+
+    <main>
+        <!-- Tabel Paket Hosting Game -->
+        <section class="table-section" id="hosting-game">
+            <h2>Paket Hosting Game</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Paket</th>
+                        <th>Harga</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paket Klasik</td>
+                        <td>Rp10.000</td>
+                        <td><button class="order-btn" onclick="order('Paket Klasik')">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td>Paket Normal</td>
+                        <td>Rp15.000</td>
+                        <td><button class="order-btn" onclick="order('Paket Normal')">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td>Paket Premium</td>
+                        <td>Rp25.000</td>
+                        <td><button class="order-btn" onclick="order('Paket Premium')">Order</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tabel Paket Desain Logo -->
+        <section class="table-section" id="desain-logo">
+            <h2>Paket Desain Logo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Paket</th>
+                        <th>Harga</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Logo Server</td>
+                        <td>Rp15.000</td>
+                        <td><button class="order-btn" onclick="order('Logo Server')">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td>Logo Store</td>
+                        <td>Rp10.000</td>
+                        <td><button class="order-btn" onclick="order('Logo Store')">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td>Logo Random</td>
+                        <td>Rp10.000</td>
+                        <td><button class="order-btn" onclick="order('Logo Random')">Order</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tabel Produk Lainnya -->
+        <section class="table-section" id="produk-lainnya">
+            <h2>Produk Lainnya</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produk</th>
+                        <th>Harga</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Realms Plus</td>
+                        <td>Rp45.000</td>
+                        <td><button class="order-btn" onclick="order('Realms Plus')">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td>Desain Sesuai Permintaan</td>
+                        <td>Hubungi Kami</td>
+                        <td><button class="order-btn" onclick="order('Desain Sesuai Permintaan')">Order</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    </footer>
+
+    <div id="notification" class="hidden">Order berhasil dilakukan!</div>
+    
+    <!-- Ikuti Saluran Resmi Kami -->
+<section class="whatsapp-channel">
+    <h2>Ikuti Saluran Resmi Kami di WhatsApp</h2>
+    <a href="https://whatsapp.com/channel/0029VabhoF9DzgT6x4LX9A2B" class="whatsapp-link" target="_blank">
+        <button class="order-btn">Gabung Sekarang</button>
+    </a>
+</section>
+
+    <!-- Metode Pembayaran -->
+    <section class="payment-methods">
+        <h2>Metode Pembayaran</h2>
+        <div class="marquee">
+        <div class="marquee-content">
+            <img src="qris-dana.png" alt="QRIS DANA" class="payment-img">
+            <img src="qris-axis.png" alt="QRIS AXIS" class="payment-img">
+            <img src="qris-shopeepay.png" alt="QRIS SHOPEEPAY" class="payment-img">
+            <img src="qris-gopay.png" alt="QRIS GOPAY" class="payment-img">
+            <img src="qris-qris.png" alt="QRIS" class="payment-img">
+            <img src="qris-dana.png" alt="QRIS DANA" class="payment-img">
+            <img src="qris-axis.png" alt="QRIS AXIS" class="payment-img">
+            <img src="qris-shopeepay.png" alt="QRIS SHOPEEPAY" class="payment-img">
+            <img src="qris-gopay.png" alt="QRIS GOPAY" class="payment-img">
+            <img src="qris-qris.png" alt="QRIS" class="payment-img">
+        </marquee>
+    </section>
+    <footer>
+        <p>&copy; 2024 Crips-Store</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

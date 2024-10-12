@@ -1,0 +1,184 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Gradasi biru tua ke biru muda */
+    color: white;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.store-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #2a5298, #1e3c72); /* Gradasi untuk judul toko */
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.store-title h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.table-section {
+    margin: 20px auto;
+    width: 90%; /* Mengatur lebar tabel agar responsif */
+    max-width: 800px; /* Membatasi lebar tabel agar tidak terlalu besar pada layar lebar */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan agar lebih menonjol */
+}
+
+table {
+    width: 100%; /* Memastikan tabel selalu menggunakan 100% dari lebar container */
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+table, th, td {
+    border: 1px solid #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+th {
+    background-color: #2a5298;
+    color: white;
+}
+
+td {
+    background-color: #1e3c72;
+}
+
+/* Tombol order dengan animasi */
+.order-btn {
+    background: linear-gradient(to right, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    transition: background 0.4s, transform 0.2s;
+}
+
+.order-btn:hover {
+    background: linear-gradient(to right, #45a049, #4CAF50);
+    transform: scale(1.05); /* Membuat tombol sedikit membesar saat dihover */
+}
+
+.order-btn:active {
+    transform: scale(0.95); /* Animasi klik tombol membuatnya sedikit mengecil */
+}
+
+.hidden {
+    display: none;
+}
+
+#notification {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+.dark-mode {
+    background: linear-gradient(to bottom, #000000, #434343);
+    color: #cccccc;
+}
+.payment-methods {
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 90%; /* Membatasi lebar */
+}
+
+.payment-methods h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap; /* Menghindari pembungkusan teks */
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 10s linear infinite; /* Set animation */
+}
+
+.payment-img {
+    height: 60px; /* Atur tinggi gambar */
+    width: 60px; /* Atur lebar gambar agar seragam */
+    margin: 0 15px; /* Jarak antar gambar */
+    transition: transform 0.3s;
+}
+
+.payment-img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+/* Animasi Marquee */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Menggeser ke kiri sebesar setengah lebar konten */
+    }
+}
+.whatsapp-channel {
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 90%; /* Membatasi lebar */
+}
+
+.whatsapp-channel h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: white; /* Warna teks */
+}
+
+.whatsapp-link {
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+}
+
+.order-btn {
+    background: linear-gradient(to right, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    transition: background 0.4s, transform 0.2s;
+    display: inline-block; /* Agar button bisa berfungsi sebagai block */
+}
+
+.order-btn:hover {
+    background: linear-gradient(to right, #45a049, #4CAF50);
+    transform: scale(1.05); /* Membuat tombol sedikit membesar saat dihover */
+}
+
+.order-btn:active {
+    transform: scale(0.95); /* Animasi klik tombol membuatnya sedikit mengecil */
+}
